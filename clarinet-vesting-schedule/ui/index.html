@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vesting Schedule UI</title>
+  </head>
+  <body>
+    <h1>Vesting Schedule Contract Demo</h1>
+
+    <section>
+      <h2>Create Schedule (Admin)</h2>
+      <label>Beneficiary principal: <input id="beneficiary" /></label><br />
+      <label>Start height: <input id="start" type="number" /></label><br />
+      <label>Cliff height: <input id="cliff" type="number" /></label><br />
+      <label>Duration: <input id="duration" type="number" /></label><br />
+      <label>Total amount (uSTX): <input id="total" type="number" /></label><br />
+      <button id="create-btn">Create schedule</button>
+    </section>
+
+    <section>
+      <h2>Read Schedule Summary</h2>
+      <label>Schedule id: <input id="summary-id" type="number" /></label>
+      <button id="summary-btn">Load summary</button>
+      <pre id="summary-out"></pre>
+    </section>
+
+    <script src="https://unpkg.com/@stacks/transactions@latest/dist/index.umd.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
